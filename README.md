@@ -9,5 +9,8 @@
   
 ## Sources
  
+ - Web
+ - Design
 
 ## Media
+### URL's
