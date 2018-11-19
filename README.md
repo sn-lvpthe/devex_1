@@ -23,5 +23,5 @@
 ### Fonts - icons
 
 -  Fonts: [Google Fonts ](https://fonts.google.com/ )
--  Icons: [Material design] (https://material.io/tools/icons/?style=baseline)
+-  Icons: [Material design](https://material.io/tools/icons/?style=baseline)
 
