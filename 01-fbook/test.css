@@ -1,0 +1,167 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  width: 100%;
+  height: 100vw;
+  background:
+    linear-gradient(217deg, rgba(255, 0, 0, .8), rgba(255, 0, 0, 0) 70.71%),
+    /* linear-gradient(127deg, rgba(0,255,0,.8), rgba(0,255,0,0) 70.71%), */
+    linear-gradient(336deg, rgba(0, 0, 255, .8), rgba(0, 0, 255, 0) 70.71%);
+  /* background-image: linear-gradient(45deg, rgba(100, 100, 100,.6), rgba(250, 250, 250, .9)); */
+  /* background-image:linear-gradient(45deg, slategray, gray, lightgray,antiquewhite); */
+}
+
+body {
+  font-family: sans-serif;
+  font-size: 16px;
+  margin: 0 auto;
+}
+
+h1.start {
+  color: white;
+  font-weight: 900;
+  text-align: center;
+  font-size: 300%;
+  vertical-align: baseline;
+  height: 80px;
+  width: 100%;
+  border: none;
+  padding: 10px 0 0 0;
+  margin: 0 0 10 0;
+  background-color: cornflowerblue;
+
+}
+
+h2.naam {
+  font-size: xx-large;
+  margin-bottom: 1ex;
+}
+
+.zoek {
+  margin-left: 1em;
+  margin-bottom: 25px;
+}
+
+.center {
+  max-width: 720px;
+  width: inherit;
+  padding: 1em;
+  margin: 15px auto 0;
+  border: solid thin maroon;
+}
+
+
+#left {
+  width: 45%;
+  display: block;
+  float: left;
+}
+
+# right {
+  display: block;
+  width: 48%;
+  height;
+  : auto;
+  float: right;
+}
+
+.clear {
+  display: block;
+  clear: both;
+}
+
+.breed {
+  display: block;
+  clear: both;
+  width: auto;
+}
+
+#search {
+  width: 250px;
+  height: 30px;
+  border-radius: 10px;
+}
+
+#search:hover {
+  width: 400px;
+  height: 30px;
+  border-radius: 10px;
+  border-color: yellowgreen;
+}
+
+button {
+  width: 250px;
+  height: 30px;
+
+}
+
+ul {
+  font-family: monospace, courier;
+  margin: 5px 0px 5px 0px;
+  list-style-type: none;
+  padding: 0;
+  list-style-position: inside;
+}
+
+.category {
+  text-decoration-color: rgb(26, 124, 179);
+  font-size: 1.3em;
+  margin-bottom: 1ex;
+}
+
+img {
+  border: 6px maroon double;
+  padding: 5px;
+}
+
+img:hover {
+  border: 6px greenyellow outset;
+}
+
+/* === Responsive block === */
+/* Mobile Styles */
+@media only screen and (max-width: 550px) {
+  #left {
+    width: 100vw;
+    display: block;
+    height: auto;
+  }
+
+  # right {
+    width: 100vw;
+    display: block;
+    height: auto;
+  }
+
+  .category {
+    text-decoration-color: rgb(26, 124, 179);
+    font-size: 1.1em;
+    margin-bottom: 1ex;
+  }
+
+  .center {
+    text-align: center;
+    width: inherit;
+    padding: 1em;
+    margin: 0 auto;
+  }
+
+  .breed {
+    text-align: left;
+    display: block;
+    clear: both;
+    width: auto;
+  }
+}
+
+/* Tablet Styles */
+/* @media only screen and (min-width: 551px) and (max-width: 960px) {
+
+} */
+/* Desktop Styles */
+/* @media only screen and (min-width: 961px) {
+    }  */

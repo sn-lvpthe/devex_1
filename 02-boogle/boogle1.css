@@ -1,0 +1,238 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.hmenu a {
+  text-decoration: none;
+  color: #009C47;
+}
+
+.hamenu a {
+  text-decoration: none;
+  color: #009C47;
+}
+
+.hmenu a:hover {
+  text-decoration: none;
+  color: #FDDF4C;
+}
+
+.hamenu a:hover {
+  text-decoration: none;
+  color: #FDDF4C;
+}
+
+.hmenu a:active {
+  text-decoration: none;
+  color: #042472;
+  /*blauw vlag */
+}
+
+.hamenu a:active {
+  text-decoration: none;
+  color: #042472;
+  /*blauw vlag */
+}
+
+body {
+  background-color: azure;
+  width: auto;
+  min-width: 550px;
+  height: 100vh;
+  font-family: sans-serif;
+}
+
+.top {
+  position: relative;
+  /* border: solid 1px red; */
+  width: 100%;
+  height: 70px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: baseline;
+}
+
+.header {
+  width: inherit;
+  height: inherit;
+  margin: inherit;
+  padding: 10px 2em 0 0;
+  top: 0;
+  left: 0;
+  text-align: right;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.hmenu {
+  font-size: normal;
+  font-kerning: auto;
+  font-weight: 600;
+  width: auto;
+  margin: 0 3px;
+}
+
+.hamenu {
+  vertical-align: bottom;
+  padding: none;
+  font-weight: 600;
+  font-size: 26px;
+  /* Preferred icon size */
+  display: inline;
+
+  width: auto;
+  margin: 3px 3px 0px 3px;
+}
+
+.container {
+  position: relative;
+  left: 0px;
+  right: 0px;
+  top: 40px;
+  text-align: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+#search {
+  font-size: 18pt;
+  font-weight: 500;
+  color: dimgrey;
+  margin: 5px auto;
+  width: 40vw;
+  height: 40px;
+  border: 3px solid #009C47;
+  border-radius: 10px;
+}
+
+.midden {
+  position: relative;
+  left: 0px;
+  top: 20vh;
+  width: auto;
+  height: auto;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.zoek {
+  position: relative;
+  margin: 0 auto;
+  width: auto;
+  height: 40px;
+}
+
+
+.zoekbalk {
+  position: relative;
+  margin-top: 80px;
+  width: auto: height:auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: baseline;
+}
+
+.zfont {
+  height: 50px;
+  width: 200px;
+  padding-top: 15px;
+  margin: 0 40px;
+  vertical-align: baseline;
+  font-size: 18px;
+  font-weight: 700;
+  background-color: #009C47;
+  color: white;
+  border: none;
+}
+
+.zfont:hover {
+  border: thin solid forestgreen;
+  background-color: white;
+  color: #009C47;
+}
+
+.mfont {
+  font-size: 72pt;
+  font-weight: 800;
+  margin: 0 0 50px 0
+}
+
+.inl {
+  display: inline;
+}
+
+.lf_1 {
+  color: #009C47;
+  /*groen vlag */
+}
+
+.lf_2 {
+  color: #FDDF4C;
+  /*geel vlag */
+
+}
+
+.lf_3 {
+  color: #042472;
+  /*blauw vlag */
+}
+
+/* Mobile Styles */
+
+@media only screen and (max-width: 580px) {
+  body {
+    background-color: azure;
+    width: 100vw;
+    min-width: 250px;
+    overflow: auto;
+    height: 100vh;
+    font-family: sans-serif;
+  }
+
+  .zoekbalk {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .zfont {
+    margin: 0 auto;
+    height: 50px;
+    width: 200px;
+    padding-top: 15px;
+    margin: 10px 0px;
+    vertical-align: baseline;
+    font-size: 18px;
+    font-weight: 700;
+    background-color: #009C47;
+    color: white;
+    border: none;
+
+  }
+}
+
+/* Tablet Styles */
+@media only screen and (min-width: 581px) and (max-width: 960px) {
+  body {
+    background-color: azure;
+    width: 100vw;
+    height: 100vh;
+    font-family: sans-serif;
+  }
+}
+
+/* Desktop Styles */
+@media only screen and (min-width: 961px) and (max-width: 1280px) {
+  body {
+    background-color: azure;
+    width: 100vw;
+    height: 100vh;
+    font-family: sans-serif;
+  }
