@@ -11,6 +11,10 @@
 - with a Brazilian flavor
 - experiment with login page ``pu-login.html ``
 - responsive for desktop - tablet - phone
+3. bootstrap
+- exercise with Bootstrap4
+- startpage for: frisseur/coiffeur/barbershop
+- Modal - Collapse - Navbar - Toggler
 
 
 ## Media recources
@@ -19,6 +23,7 @@
 - iStock: https://www.istockphoto.com/
 - Google Design: https://design.google/
 - Material Design: https://material.io/
+- Clipart: https://openclipart.org/
 
 ### Fonts - icons
 
