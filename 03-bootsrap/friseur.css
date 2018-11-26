@@ -1,0 +1,13 @@
+/* hulplijen */
+hr {
+    margin: 10 auto;
+    text-align: center;
+    border: 2px double LightCoral; /*rgb(221, 160, 221);*/
+    width: 50%;
+}
+/* aanpassingen bootstrazp */
+
+h1, h2, h3, h4 {
+font-family: "Open Sans", sans-serif;
+
+}

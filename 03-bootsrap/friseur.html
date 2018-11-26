@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Bootstrap 4">
+    <meta name="keywords" content="me, hobbies">
+    <meta name="author" content="LVP">
+    <title>Scissorshand</title>
+    <link rel="stylesheet" type="text/css" title="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" title="stylesheet" href="friseur.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js">
+    </script>
+    <script src="js/bootstrap.js"></script>
+
+  </head>
+
+  <body>
+    <!-- navigatie header -->
+    <!-- merknaam -->
+    <div class="container">
+      <nav class="navbar navbar-default fiwed-top navbar-dark navbar-expand-lg" style="background-color:LightCoral">
+        <!-- rgb(221, 160, 221) -->
+        <!-- rgba(250,0,0,.9); -->
+        <!-- <div class="container-fluid"> -->
+
+          <div class="navbar-header">
+            <a class="navbar-brand " href="#">
+              <img src="img/kapsalon.svg" width="80" height="50" class="d.inline-block align-top" alt="Brand"><span class="text-dark">Scissorshand</span></a>
+          </div>
+          <!-- menu met responsive toggling -->
+          <div class="collapse navbar-collapse" id="scissors">
+            <ul class="nav justify-content-end">
+              <li class="nav-item"><a class="nav-link text-white" href="#aanbod">Ons aanbod</a></li>
+              <li class="nav-item"><a class="nav-link text-white" href="#afspraak">Afspraak maken</a></li>
+              <li class="nav-item"><a class="nav-link text-white" href="#faq">FAQ</a></li>
+              <li class="nav-item"><a class="nav-link text-white" href="#about" data-toggle="modal" data-target="#missie">Over ons</a></li>
+              <form class="navbar-form navbar-right">
+                <div class="form-group"> <input class="form-control" placeholder="Zoeken" type="text">
+                </div>
+              </form>
+            </ul>
+          </div>
+            <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#scissors" aria-expanded="false">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+        <!-- </div> -->
+      </nav>
+    </div>
+    <!-- diarama -->
+    <div class="container">
+      <div id="diarama" class="carousel slide" data-ride="carousel">
+        <!-- verloop -->
+        <ol class="carousel-indicators">
+          <li data-target="#diarama" data-slide-to="0" class="active">
+            <br />
+          </li>
+          <li data-target="#diarama" data-slide-to="1">
+            <br />
+          </li>
+          <li data-target="#diarama" data-slide-to="2">
+            <br />
+          </li>
+        </ol>
+        <!-- diareeks -->
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="d-block w-100" src="img/ivan-cortez-friseur1.jpg" alt="1">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="img/chester-wade-friseur2.jpg" alt="2">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="img/ashkan-forouzani-friseur3.jpg" alt="3">
+          </div>
+        </div>
+
+        <!-- vooruit/achteruit   -->
+        <a class="carousel-control-prev" href="#diarama" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" </span> <span class="sr-only">Vorige </span>
+        </a>
+        <a class="carousel-control-next" href="#diarama" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden:"true"></span>
+          <span class="sr-only">Volgende </span>
+        </a>
+      </div>
+    </div>
+    <br />
+    <!-- aanbod -->
+    <div class="container" id="aanbod">
+      <h2 class="text-center">Wat hebben we te bieden?</h2>
+      <hr />
+      <div class="row">
+        <div class="col-md-4">
+          <h3> Styling </h3>
+          <img class="img-responsive" src="img/toa-heftiba-hairstyle.jpg" width="300" height="200" alt="" />
+        </div>
+        <div class="col-md-4">
+          <h3> Kleuren</h3>
+          <img class="img-responsive" src="img/george-bohunicky-haircolor.jpg" width="300" height="200" alt="" />
+        </div>
+        <div class="col-md-4">
+          <h3> Haardesign</h3>
+          <img class="img-responsive" src="img/emiliano-vittoriosi-haircut.jpg" width="300" height="200" alt="" />
+        </div>
+      </div>
+    </div>
+    <br />
+    <!-- praktisch blok -->
+    <!-- afspraak formulier -->
+    <div class="container" id="afspraak">
+      <h2 class="text-center">Maak een afspraak</h2>
+      <hr />
+      <div class="row justify-content-md-center">
+        <div class="col-md-5  col-md-offset-1 form-group ">
+          <input class="form-control" placeholder="Naam en voornaam" type="text">
+          <input class="form-control" placeholder="Telefoonnummer" type="text">
+          <input class="form-control" placeholder="Datum en uur" type="text">
+          <textarea class="form-control" placeholder="Wensen" rows="8"></textarea>
+          <br />
+          <input type="checkbox" /> Stuur me de nieuwsbrief <br />
+          <br />
+          <button class="btn btn-success center-block">Verstuur</button>
+        </div>
+        <!-- openingsuren -->
+        <div class="col-md-5  col-md-offset-1 ">
+          <h4>Openingsuren</h4>
+          <table class="table">
+            <thead class="dark" style="background-color:LightCoral;">
+              <tr>
+                <th scope="col">Dag</th>
+                <th scope="col">Uren</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr scope="row">
+                <td>Maandag</td>
+                <td>Sluitingsdag </td>
+              </tr>
+              <tr>
+                <td>Dinsdag </td>
+                <td>9.00u &dash; 16.00u</td>
+              </tr>
+              <tr scope="row">
+                <td>Woensdag </td>
+                <td>9.00u &dash; 16.00u </td>
+              </tr>
+              <tr scope="row">
+                <td>Donderdag </td>
+                <td>9.00u &dash; 16.00u </td>
+              </tr>
+              <tr scope="row">
+                <td>Vrijdag </td>
+                <td>9.00u &dash; 16.00u </td>
+              </tr>
+              <tr scope="row">
+                <td>Zaterdag </td>
+                <td>9.00u &dash; 16.00u </td>
+              </tr>
+              <tr scope="row">
+                <td>Zondag </td>
+                <td>Gesloten </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <!-- veelgestelde vragen -->
+    <div class=container id="faq">
+      <h2 class="text-center">Vaak gevraagd</h2>
+      <hr />
+      <div class="accordion" id="accordionExample">
+        <div class="card">
+          <div class="card-header"  style="background-color:LightCoral"  id="headingOne">
+            <h4 class="mb-0 " >
+              <button class="btn btn-link text-white" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                Aanvaarden jullie Bongobonnen?
+              </button>
+            </h4>
+          </div>
+
+          <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+            <div class="card-body">
+              3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it
+              squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan
+              excepteur butcher vice lomo.
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" style="background-color:LightCoral" id="headingTwo">
+            <h4 class="mb-0" >
+              <button class="btn btn-link collapsed text-white" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                Mag mijn hondje bij mij blijven?
+              </button>
+            </h4>
+          </div>
+          <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+            <div class="card-body">
+              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food
+              truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et.
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" style="background-color:LightCoral" id="headingThree">
+            <h4 class="mb-0" >
+              <button class="btn btn-link collapsed text-white" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                Vanaf welke leeftijd is m'n welkom?
+              </button>
+            </h4>
+          </div>
+          <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+            <div class="card-body">
+              Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer
+              farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br />
+    <!-- footer -->
+    <!-- adresgegevens -->
+    <footer class="container border border-dark shadow p-3 mb-5 bg-white rounded">
+      <div class="row">
+        <addr class="col col-md-4 col-md-offset-1">
+          <h4>Adres</h4>
+          Scissorshand<br />
+          Scheerderstraat 8<br />
+          Kappersstad<br />
+          Telefoon: 000 235 23 58<br />
+          E-mail:<a href="mailto:scissors@hand.org" target="_top"> Adres </a><br />
+          <a href="#">Website </a>
+        </addr>
+
+        <!-- logo -->
+        <div class="text-center col col-md-4">
+          <img class="img-responsive align-center " src="img/barber-08_friseur_sm.jpg" width="150" height="150" alt=""></span>
+        </div>
+
+        <!-- sitemap -->
+        <div class="col col-md-3">
+           <h4>Sitemap</h4>
+           <ul>
+             <li><a href="#aanbod">Ons aanbod</a></li>
+             <li><a href="#afspraak">Afspraken</a></li>
+             <li><a href="#faq">FAQ</a></li>
+             <li><a href="#about" data-toggle="modal" data-target="#missie">Over ons</a></li>
+           </ul>
+        </div>
+      </div>
+    </footer>
+    <br />
+<!-- einde footer begin modal -->
+<!-- Modal -->
+<div class="modal fade" id="missie" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"
+            aria-label="Close"><span aria-hidden="true"></span></button>
+        <h5 class="modal-title" id="missieTitle">Onze missie</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Sluit">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+      <img  src="img/female-hair.svg" class="img-responsive rounded mx-auto d-block border border-info" width="150" height="200">
+      <br />
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      <br />
+
+      </div>
+      <!-- <div class="modal-footer">
+        <button type="button" class="btn btn-info" data-dismiss="modal">Sluiten</button>
+      </div> -->
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+  </body>
+
+</html>
